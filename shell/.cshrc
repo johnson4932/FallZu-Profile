@@ -7,6 +7,11 @@ setenv EDITOR vim
 #default umask
 umask 022
 
+#path
+set path = (~/bin ~)
+set path = ($path /usr/local/pgsql/bin)
+set path = ($path /bin /sbin /standard /usr/bin /usr/sbin /usr/X11R6/bin /usr/local/bin /usr/local/sbin /usr/games)
+
 cd $HOME
 alias mwget 'wget -m -nH -np'
 alias svn '(umask 002; /usr/local/bin/svn \!*)'
@@ -48,14 +53,10 @@ alias telnet 'env LANG=zh_TW.Big5 zh-telnet \!*'
 alias t 'env LANG=zh_TW.Big5 zh-telnet \!*'
 alias listen 'sockstat | grep "\*:[0-9 ]*\*:\*" | cut -c10-18,30-34,39-45 | sort -n -u +2'
 alias irssi 'env TERM=xterm-color irssi'
-setenv NNTPSERVER news.stu.edu.tw
 set autoexpand
 set autolist
 set history = 5000
 set mail = (1 /var/mail/$USER)
-set path = (~/bin ~)
-set path = ($path /usr/local/pgsql/bin)
-set path = ($path /bin /sbin /standard /usr/bin /usr/sbin /usr/X11R6/bin /usr/local/bin /usr/local/sbin /usr/games)
 if ( ! $?WINDOW ) then
   set prompt = "%{^[[32m%}%n%{^[[0m%}@%{^[[36m%}%m%{^[[0m%} [%{^[[32m%}%~%{^[[0m%}] (%{^[[36m%}%T%{^[[0m%}) "
 else
