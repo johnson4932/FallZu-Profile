@@ -1,3 +1,4 @@
+" General
 source $VIMRUNTIME/indent.vim
 behave mswin
 
