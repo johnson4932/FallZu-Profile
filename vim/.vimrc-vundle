@@ -1,0 +1,11 @@
+" Vundle
+set nocompatible  " no compatible with vi-mode
+filetype off
+
+let vundle_install=expand('~/.vim/bundle/vundle/README.md')
+if !filereadable(vundle_install)
+    echo "Installing Vundle....."
+    @mkdir -p ~/.vim/bundle
+    @git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+endif
+
