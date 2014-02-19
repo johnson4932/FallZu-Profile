@@ -9,7 +9,12 @@ if !filereadable(vundle_install)
     silent !git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 endif
 
-" general
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+Bundle 'tpope/vim-fugitive'
+
+" General
 source $VIMRUNTIME/indent.vim
 behave mswin
 
