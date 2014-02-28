@@ -27,6 +27,7 @@ set pastetoggle=<F11>
 set hls
 set shiftwidth=4
 set tabstop=4
+set backspace=2
 set expandtab
 set showmatch
 set background=light
