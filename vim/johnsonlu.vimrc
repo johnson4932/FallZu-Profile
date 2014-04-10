@@ -13,6 +13,7 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 Bundle 'tpope/vim-fugitive'
+Bundle 'golangtw/go.vim'
 
 " General
 source $VIMRUNTIME/indent.vim
