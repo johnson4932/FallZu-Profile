@@ -16,6 +16,7 @@ set expandtab
 set showmatch
 set background=light
 set display=lastline
+set backspace=indent,eol,start
 colorscheme desert
 syntax on
 
