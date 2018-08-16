@@ -12,8 +12,9 @@ endif
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
-Bundle 'tpope/vim-fugitive'
-Bundle 'golangtw/go.vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'posva/vim-vue'
+Plugin 'editorconfig/editorconfig-vim'
 
 " General
 source $VIMRUNTIME/indent.vim
