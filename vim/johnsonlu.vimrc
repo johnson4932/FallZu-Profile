@@ -10,11 +10,13 @@ if !filereadable(vundle_install)
 endif
 
 set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+call vundle#begin()
 
 Plugin 'tpope/vim-fugitive'
 Plugin 'posva/vim-vue'
 Plugin 'editorconfig/editorconfig-vim'
+
+call vundle#end()
 
 " General
 source $VIMRUNTIME/indent.vim
