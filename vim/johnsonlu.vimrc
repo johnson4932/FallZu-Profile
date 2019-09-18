@@ -43,6 +43,7 @@ syntax on
 highlight Comment ctermfg=darkcyan
 highlight Search term=reverse ctermbg=4 ctermfg=7
 highlight Normal ctermbg=black ctermfg=white
+highlight ColorColumn ctermbg=none
 filetype plugin on
 filetype indent on
 autocmd BufWritePre * :%s/\s\+$//e
