@@ -15,6 +15,7 @@ call vundle#begin()
 Plugin 'tpope/vim-fugitive'
 Plugin 'posva/vim-vue'
 Plugin 'editorconfig/editorconfig-vim'
+Plugin 'ekalinin/Dockerfile.vim'
 
 call vundle#end()
 
